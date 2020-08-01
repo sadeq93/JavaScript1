@@ -75,12 +75,18 @@ function validateCreditNumber(credit){
     checkTheTypeOf(credit) ||
     checkSimilarNumber(credit) ||
     checkTheLastNumber(credit) ||
-    checkTheTotal(credit);
+    checkTheTotal(credit) || 
+    `SUCCESS! YOUR CREDIT CARD NUMBER: ${credit} IS VALID`;
 
 }
+console.log(validateCreditNumber('3622211177764446'));
+console.log(validateCreditNumber('12345678904567'));
+console.log(validateCreditNumber('77777q444c011112'));
+console.log(validateCreditNumber('8888888888888888'));
+console.log(validateCreditNumber('4444444444444447'));
+console.log(validateCreditNumber('0011000011000022'));
 
 
-console.log(validateCreditNumber('11111a111111111111'))
 
 
 
